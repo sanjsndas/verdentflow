@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cookies Policy - VerdantFlow Irrigation Services</title>
+<style>
+  :root {
+    --color-primary: #107a32;
+    --color-primary-light: #3fb559;
+    --color-secondary: #a8d5a3;
+    --color-gray-dark: #374151;
+    --color-gray-medium: #6b7280;
+    --color-gray-light: #fafafa;
+    --max-width: 1200px;
+
+    --font-heading: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap');
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: var(--font-body);
+    background-color: var(--color-gray-light);
+    color: var(--color-gray-dark);
+    line-height: 1.9;
+    font-size: 18px;
+    scroll-behavior: smooth;
+  }
+  a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  a:hover, a:focus {
+    color: var(--color-primary-light);
+    outline: none;
+  }
+  .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  header {
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+  }
+  .logo {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: var(--color-primary);
+    letter-spacing: 0.05em;
+    user-select: none;
+  }
+  /* Navigation without list - direct a elements container */
+  .nav-links {
+    display: flex;
+    gap: 2.5rem;
+    font-weight: 600;
+  }
+  .nav-links a {
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.1;
+  }
+  .nav-links a:hover,
+  .nav-links a:focus {
+    color: var(--color-primary-light);
+    outline: none;
+  }
+  main {
+    padding: 4rem 2rem 6rem;
+    background: white;
+    max-width: var(--max-width);
+    margin: 4rem auto 6rem auto;
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 24px rgb(0 0 0 / 0.06);
+  }
+  main h1 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 3.8rem;
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  main h2 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 2.6rem;
+    color: var(--color-primary);
+    margin-top: 3rem;
+    margin-bottom: 1.2rem;
+  }
+  main h3 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  main p {
+    font-size: 1.14rem;
+    color: var(--color-gray-dark);
+    max-width: 900px;
+    margin: 0 auto 1.5rem auto;
+    line-height: 1.95;
+  }
+  main ul {
+    max-width: 900px;
+    margin: 0 auto 1.8rem auto;
+    padding-left: 1.9rem;
+    color: var(--color-gray-dark);
+  }
+  main ul li {
+    margin-bottom: 1.3rem;
+    font-size: 1.11rem;
+    line-height: 1.75;
+  }
+  footer {
+    background: white;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--color-gray-medium);
+    font-weight: 600;
+    box-shadow: 0 -2px 6px rgb(0 0 0 / 0.05);
+    user-select: none;
+  }
+  footer address {
+    font-style: normal;
+    color: var(--color-primary);
+    display: block;
+    margin-top: 0.5rem;
+  }
+  /* Cookie consent dialog */
+  #cookie-consent {
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 24px rgb(0 0 0 / 0.15);
+    max-width: 960px;
+    width: 90%;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    font-size: 1rem;
+    z-index: 2000;
+  }
+  #cookie-consent p {
+    margin: 0;
+    flex: 1 1 auto;
+    color: var(--color-gray-dark);
+    font-size: 1rem;
+  }
+  #cookie-consent button {
+    font-weight: 600;
+    padding: 0.5rem 1.2rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  #cookie-consent button#accept-btn {
+    background-color: var(--color-primary);
+    color: white;
+  }
+  #cookie-consent button#accept-btn:hover,
+  #cookie-consent button#accept-btn:focus {
+    background-color: var(--color-primary-light);
+    outline: none;
+  }
+  #cookie-consent button#decline-btn {
+    background-color: var(--color-gray-medium);
+    color: white;
+  }
+  #cookie-consent button#decline-btn:hover,
+  #cookie-consent button#decline-btn:focus {
+    background-color: #4b5563;
+    outline: none;
+  }
+  @media (max-width: 720px) {
+    main {
+      margin: 2rem 1rem 3rem 1rem;
+      padding: 3rem 1.5rem 4rem 1.5rem;
+    }
+    main h1 {
+      font-size: 2.8rem;
+    }
+    main h2 {
+      font-size: 2.2rem;
+      margin-top: 2rem;
+    }
+    main h3 {
+      font-size: 1.6rem;
+      margin-top: 1.8rem;
+    }
+    main p,
+    main ul li {
+      font-size: 1rem;
+      max-width: 100%;
+    }
+    #cookie-consent {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    #cookie-consent p {
+      margin-bottom: 1rem;
+    }
+    #cookie-consent button {
+      width: 100%;
+      text-align: center;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <nav class="container" aria-label="Primary Navigation">
+    <div class="logo" tabindex="0">VerdantFlow Irrigation</div>
+    <div class="nav-links">
+   <a href="index.html" tabindex="0">Home</a>
+        <a href="privacy.html" tabindex="0">Privacy</a>
+        <a href="terms.html" tabindex="0">Terms & conditons</a>
+        <a href="cookies.html"tabindex="0"aria-current="page">Cookies</a>
+        <a href="contact.html" tabindex="0">Contact us</a>
+    </div>
+  </nav>
+</header>
+
+<main role="main" tabindex="0" aria-label="Cookies Policy Content">
+  <h1>Cookies Policy</h1>
+  <p>Effective Date: June 2024</p>
+
+  <h2>Introduction</h2>
+  <p>
+    This Cookies Policy explains how VerdantFlow Irrigation Services ("we," "us," "our") uses cookies and similar tracking technologies on our website and services. Cookies are small data files stored on your device that help enhance your browsing experience and provide us with information about how our website is used.
+  </p>
+  <p>
+    Understanding how and why we use cookies will empower you to make informed choices about your data and privacy as you use our site.
+  </p>
+
+  <h2>1. What Are Cookies?</h2>
+  <p>
+    Cookies are text files that contain small pieces of data sent from a website and stored by your web browser on your device. They enable websites to remember your preferences, login status, and other useful information for a better user experience.
+  </p>
+  <p>
+    Cookies can also help website owners understand how visitors interact with their site by collecting anonymous data on site traffic and engagement.
+  </p>
+
+  <h2>2. Types of Cookies We Use</h2>
+  <h3>2.1 Essential Cookies</h3>
+  <p>
+    These cookies are necessary for the operation of our website and enable you to use key features such as secure areas and sessions.
+  </p>
+
+  <h3>2.2 Performance and Analytics Cookies</h3>
+  <p>
+    These cookies collect anonymous information about how visitors use our site, which pages are most popular, and whether visitors receive error messages. We use this data to improve our site's performance and your experience.
+  </p>
+
+  <h3>2.3 Functionality Cookies</h3>
+  <p>
+    Functionality cookies allow our site to remember choices you make, like your language preference or location, providing enhanced functionality and personalization.
+  </p>
+
+  <h3>2.4 Advertising and Targeting Cookies</h3>
+  <p>
+    These cookies track your browsing habits to personalize advertising content that may be of interest to you. We currently do not use advertising cookies ourselves but may allow third-party ads to serve you.
+  </p>
+
+  <h2>3. How We Use Cookies</h2>
+  <p>
+    Cookies help us provide core functionalities, remember your settings, improve performance, analyze site usage, and personalize content and services.
+  </p>
+  <p>
+    We use cookies to:
+  </p>
+  <ul>
+    <li>Recognize you when you return to our site</li>
+    <li>Enhance site navigation and usability</li>
+    <li>Measure site performance and usage metrics</li>
+    <li>Customize content and communications based on your preferences</li>
+  </ul>
+
+  <h2>4. Third-Party Cookies</h2>
+  <p>
+    We may allow third-party providers like Google Analytics to place cookies on our site to gather anonymous usage data to help us improve our services. These cookies are governed by the respective third party's privacy policies.
+  </p>
+
+  <h2>5. Managing Cookies</h2>
+  <p>
+    You have control over how cookies are used on your device. Most browsers allow you to block, delete, or manage cookies through your browser settings. Disabling certain cookies may affect site functionality.
+  </p>
+  <p>
+    For more information on managing cookies, visit your browser’s help section or https://www.allaboutcookies.org.
+  </p>
+
+  <h2>6. Cookie Consent Dialog</h2>
+  <p>
+    To comply with privacy regulations such as GDPR, we display a cookie consent dialog at the bottom of the screen on your first visit, allowing you to accept or decline non-essential cookies.
+  </p>
+  <p>
+    Your choice will be saved and respected during your visits to our site.
+  </p>
+
+  <h2>7. Data Security</h2>
+  <p>
+    We maintain strict security measures to protect the data collected by cookies and ensure your privacy.
+  </p>
+
+  <h2>8. Your Rights And Choices</h2>
+  <p>
+    You have the right to withdraw your consent to the use of non-essential cookies at any time via our cookie consent dialog or your browser settings.
+  </p>
+  <p>
+    You may also request information about the data that we collect or ask us to delete your data within the bounds of applicable laws.
+  </p>
+
+  <h2>9. Updates To This Cookies Policy</h2>
+  <p>
+    This Cookies Policy may be updated from time to time to reflect changes in how we use cookies or applicable laws. The updated policy will be posted here with the revision date.
+  </p>
+
+  <h2>10. Contact Information</h2>
+  <p>
+    For any questions or concerns regarding our use of cookies or this policy, please contact us:
+  </p>
+  <address style="max-width:900px; margin:0 auto 3rem auto; font-style: normal; font-weight: 600; color: var(--color-primary);">
+    VerdantFlow Irrigation Services<br />
+    29 Washington Pl, New York, NY 10003, USA<br />
+    Phone: <a href="tel:+18773338889" aria-label="Call VerdantFlow Irrigation">+1 (877) 333-8889</a><br />
+    Email: <a href="mailto:cookies@verdantflow.com" aria-label="Email VerdantFlow Cookies Support">cookies@verdantflow.com</a>
+  </address>
+
+  <h2>11. Extensive Cookie Information And User Guidance</h2>
+  <p>
+    Cookies are central to modern web interactions. They enhance user convenience by remembering login credentials, preferences, and enable rich interactive experiences. At VerdantFlow, we utilize cookies responsibly and with respect for your privacy choices.
+  </p>
+  
+  <h3>11.1 Technical Details</h3>
+  <p>
+    Cookies may be session-based, deleted when your browser closes, or persistent, remaining on your device for a specified duration to recall your preferences on return visits.
+  </p>
+  <p>
+    We use encrypted secure cookies where appropriate to protect your data.
+  </p>
+
+  <h3>11.2 Analytical Cookie Examples</h3>
+  <p>
+    Our analytics partners collect aggregated data like page views, time spent on pages, and navigation paths to help us understand visitor interactions and site performance.
+  </p>
+  <p>
+    This data does not include personal identifiers like names or emails.
+  </p>
+
+  <h3>11.3 Opt-Out Choices</h3>
+  <p>
+    You can opt out of non-essential cookies using our dialog or by adjusting your browser settings. We provide clear options to control what data you share.
+  </p>
+ 
+  <h3>11.4 Related Privacy Practices</h3>
+  <p>
+    Our Cookies Policy works in tandem with our Privacy Policy, covering the broader scope of how your data is collected, used, and protected.
+  </p>
+
+  <h3>11.5 Legal Compliance</h3>
+  <p>
+    We comply with data protection regulations such as the EU General Data Protection Regulation (GDPR), California Consumer Privacy Act (CCPA), and other applicable privacy laws.
+  </p>
+
+  <h2>12. User Responsibilities</h2>
+  <p>
+    Users are encouraged to stay informed about cookies and privacy settings to maintain control over their data.
+  </p>
+
+  <h2>13. How Cookies Enhance Your Experience</h2>
+  <p>
+    Cookies facilitate personalized navigation, remembering your selections and improving page load times by caching content.
+  </p>
+
+  <h2>14. Transparency And Accountability</h2>
+  <p>
+    VerdantFlow is committed to being transparent about cookie use and providing user-friendly controls.
+  </p>
+
+  <h2>15. Third-Party Advertising and Cookies</h2>
+  <p>
+    While VerdantFlow does not directly use advertising cookies, third parties may do so on our site. We do not control this and recommend reviewing their policies.
+  </p>
+
+  <h2>16. Understanding Cookie Categories</h2>
+  <h3>16.1 Strictly Necessary Cookies</h3>
+  <p>
+    These are essential and cannot be disabled as they enable core functionality like security and accessibility.
+  </p>
+
+  <h3>16.2 Performance Cookies</h3>
+  <p>
+    Collect anonymous usage data to help us improve site speed and functionality.
+  </p>
+
+  <h3>16.3 Functional Cookies</h3>
+  <p>
+    Remember user preferences for enhanced personalization.
+  </p>
+
+  <h3>16.4 Targeting Cookies</h3>
+  <p>
+    Help deliver relevant advertisements and measure marketing effectiveness.
+  </p>
+
+  <h2>17. More On Managing Cookies</h2>
+  <p>
+    Various browsers provide extensive options to manage cookies, including blocking all, disabling third-party cookies, or deleting cookies periodically.
+  </p>
+
+  <h2>18. Cookie Policy FAQs</h2>
+  <h3>Q: What happens if I disable cookies?</h3>
+  <p>Your experience may be limited and some features may not work properly.</p>
+  <h3>Q: Are cookies dangerous?</h3>
+  <p>No, cookies are safe text files and cannot carry viruses or malware.</p>
+  <h3>Q: How often do you update this policy?</h3>
+  <p>We review our policies regularly and update as needed to keep you informed.</p>
+
+  <h2>19. The Importance of Cookie Consent</h2>
+  <p>
+    Consent ensures you have control over what data you share while using our services. Our popup makes this transparent and easy to manage.
+  </p>
+
+  <h2>20. Cookies In The Context Of Our Services</h2>
+  <p>
+    As an irrigation services company, cookies help us streamline communication, deliver personalized content and process inquiries efficiently.
+  </p>
+
+  <h2>21. Technological Enhancements And Cookies</h2>
+  <p>
+    With evolving technologies, cookies continue to help shape intuitive interfaces and automated smart features on our website.
+  </p>
+
+  <h2>22. User Empowerment Through Controls</h2>
+  <p>
+    Our cookie consent dialog can be accessed and changed any time, allowing you to easily revise your preferences.
+  </p>
+
+  <h2>23. Our Commitment To Privacy</h2>
+  <p>
+    We respect your rights and strive for the highest privacy standards in cookie usage and data protection.
+  </p>
+
+  <h2>24. Disclaimer And Limitations</h2>
+  <p>
+    While we take security measures seriously, absolute prevention of data breaches is not guaranteed. We encourage best practices in personal data safety.
+  </p>
+
+  <h2>25. Contact Us Regarding Cookies</h2>
+  <p>
+    For questions about this Cookies Policy or your choices, please contact our data privacy officer.
+  </p>
+
+  <address style="max-width:900px; margin:3rem auto 0 auto; font-style: normal; font-weight: 600; color: var(--color-primary); text-align: center;">
+    VerdantFlow Irrigation Services<br />
+    29 Washington Pl, New York, NY 10003, USA<br />
+    Phone: <a href="tel:+18773338889" style="color: var(--color-primary); text-decoration: none;">+1 (877) 333-8889</a><br />
+    Email: <a href="mailto:cookies@verdantflow.com" style="color: var(--color-primary);">cookies@verdantflow.com</a>
+  </address>
+</main>
+
+<footer>
+  &copy; 2024 VerdantFlow Irrigation Services - All Rights Reserved
+  <address>
+    29 Washington Pl, New York, NY 10003, USA | Phone: <a href="tel:+18773338889" style="color: var(--color-primary); text-decoration: none;">+1 (877) 333-8889</a>
+  </address>
+</footer>
+
+<div id="cookie-consent" role="dialog" aria-live="polite" aria-label="Cookie consent banner">
+  <p>We use cookies to enhance your browsing experience and analyze site traffic. By clicking “Accept,” you consent to our use of cookies. You may also decline.</p>
+  <button id="accept-btn" type="button" aria-label="Accept cookies">Accept</button>
+  <button id="decline-btn" type="button" aria-label="Decline cookies">Decline</button>
+</div>
+
+<script>
+  (function(){
+    const cookieConsent = document.getElementById('cookie-consent');
+    const acceptBtn = document.getElementById('accept-btn');
+    const declineBtn = document.getElementById('decline-btn');
+
+    function setCookie(name, value, days) {
+      const d = new Date();
+      d.setTime(d.getTime() + (days*24*60*60*1000));
+      const expires = "expires="+ d.toUTCString();
+      document.cookie = name + "=" + value + ";" + expires + ";path=/";
+    }
+
+    function getCookie(name) {
+      const cname = name + "=";
+      const decodedCookie = decodeURIComponent(document.cookie);
+      const ca = decodedCookie.split(';');
+      for(let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) === ' ') c = c.substring(1);
+        if (c.indexOf(cname) === 0) return c.substring(cname.length, c.length);
+      }
+      return "";
+    }
+
+    function hideConsent() {
+      cookieConsent.style.display = 'none';
+    }
+
+    const consent = getCookie('verdantflow_cookie_consent');
+    if(consent === 'accepted' || consent === 'declined') {
+      hideConsent();
+    }
+
+    acceptBtn.addEventListener('click', function() {
+      setCookie('verdantflow_cookie_consent', 'accepted', 365);
+      hideConsent();
+      // Optionally, initialize analytics here if needed
+    });
+
+    declineBtn.addEventListener('click', function() {
+      setCookie('verdantflow_cookie_consent', 'declined', 365);
+      hideConsent();
+    });
+  })();
+</script>
+</body>
+</html>
+
